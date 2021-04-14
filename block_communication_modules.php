@@ -75,7 +75,7 @@ class block_communication_modules extends block_list {
 
         foreach ($modfullnames as $modname => $modfullname) {
             if ($modname === 'chat' or $modname === 'forum') {
-                $icon = '<img src="'.$OUTPUT->pix_url('icon', $modname) . '" class="icon" alt="" />';
+                $icon = '<img src="'.$OUTPUT->image_url('icon', $modname) . '" class="icon" alt="" />';
                 $this->content->items[] = '<a href="'.$CFG->wwwroot.'/mod/'.$modname.'/index.php?id='.$course->id.'">'.$icon.$modfullname.'</a>';
             }
         }
